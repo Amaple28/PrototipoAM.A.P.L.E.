@@ -1,0 +1,165 @@
+/*RESET-LIMPANDO MINHA PÁGINA*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: arial, verdana, helvetica;
+    box-sizing: border-box;
+}
+
+
+/*MUDAR TIPO DE ROLAGEM (SCROLL DO NAVEGADOR - DESLIZAR)*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Formatação - NAV*/
+
+.icone {
+    width: 40px;
+}
+
+.icone_nome {
+    display: flex;
+}
+
+
+/*SECTION-FULLSCREN CAPA*/
+
+.img_total {
+    background-image: url(img/natu/foto6.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img_total h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: white;
+    margin-top: 80px;
+}
+
+.img_total h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.botao {
+    background-color: black;
+    border-radius: 2px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 80px;
+    box-shadow: rgb(50, 50, 50) 2px 2px 2px 2px;
+}
+
+.botao:hover {
+    color: #12792c;
+}
+
+
+/*QUEBRA DE PONTO (BREAKPOINT)*/
+
+@media (max-width: 700px) {
+    .img_total h3 {
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .img_total h1 {
+        color: #ffffff;
+        margin-top: 170px;
+    }
+    .botao {
+        margin-top: 20px;
+    }
+}
+
+
+/*Mosaico*/
+
+.conheca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.conheca h1 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+.conheca p {
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #5f5b5b;
+}
+
+.conheca hr {
+    height: 2px;
+    width: 300px;
+    background-color: black;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.conheca .fotos_conheca {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conheca .fotos_conheca li {
+    list-style: none;
+    height: 300px;
+    padding: 10px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.conheca .fotos_conheca .ft_pequena {
+    flex-basis: 40%;
+}
+
+.conheca .fotos_conheca .ft_grande {
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px) {
+    .conheca .fotos_conheca .ft_pequena {
+        flex-basis: 100%;
+    }
+    .conheca .fotos_conheca .ft_grande {
+        flex-basis: 100%;
+    }
+}
+
+
+/*Desmatamento*/
+
+.desmatamento {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.accordion {
+    width: 600px;
+}
+
+.carousel {
+    width: 600px;
+}
